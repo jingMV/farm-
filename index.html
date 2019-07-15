@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="all" href="style.css">
+    <title>Billing System</title>
+    <style>
+    #clear {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+         <div class="logo">
+             <h1>FOREVER FARM</h1>
+         </div>
+        </header>
+       <!--SECTION-->
+       <section>
+           <div class="product-section">
+               <h2>Product Section</h2>
+               <ul class="value">
+                   <li>
+                       <span class="title">Corn</span><br>
+                       <span class="price">Price: 100 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Banana</span><br>
+                        <span class="price">Price: 70 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Apple</span><br>
+                        <span class="price">Price: 120 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Orange</span><br>
+                        <span class="price">Price: 120 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Mango</span><br>
+                        <span class="price">Price: 110 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Strawberry</span><br>
+                        <span class="price">Price: 140 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Water Melon</span><br>
+                        <span class="price">Price: 150 / KG</span>
+                    </li>
+                    <li>
+                        <span class="title">Tamarine</span><br>
+                        <span class="price">Price: 200 / KG</span>
+                    </li>
+               </ul>
+           </div>
+           <div class="order-now">
+               <h2>Order Section</h2>
+           </div>
+           <form>
+               <label for="corn">Corn:</label><br>
+               <input type="number" id="corn" name="corn" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="banana">Banana:</label><br>
+               <input type="number" id="banana" name="banana" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="apple">Corn:</label><br>
+               <input type="number" id="apple" name="apple" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="orange">Orange:</label><br>
+               <input type="number" id="orange" name="orange" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="mango">Mango:</label><br>
+               <input type="number" id="mango" name="mango" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="strawberry">Strawberry:</label><br>
+               <input type="number" id="strawberry" name="strawberry" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="waterMelon">Water Melon:</label><br>
+               <input type="number" id="waterMelon" name="waterMelon" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+               <label for="tamarine">Tamarine:</label><br>
+               <input type="number" id="tamarine" name="tamarine" value=0 onfocus="this.value=''">
+               <br>
+               <br>
+           </form>
+           <button onclick="submitOrder()">Submit Order</button>
+           <div class="your-order">
+               <ol id="myUl"></ol>
+           </div>
+           <button id="clear">Clear List</button>
+       </section>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
