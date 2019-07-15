@@ -1,25 +1,71 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+    font-family: 'roboto';
+    background: #00D9E9;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    text-align: center;
+}
+header img {
+    width: 70px;
+    margin-top: 12px;
+}
+section {
+    background-image: url('./img/2392614.png');
+    background-size: cover;
+}
+section .banner-img img {
+    width: 100%
+}
+section .product-section {
+    color: #ffffff;
+    background: #008000;
+    padding: 12px;
+}
+section .product-section h2 {
+    font-size: 15px;
+    margin: 15px;
+    text-align: center;
+}
+section .product-section li span {
+    font-size: 12px;
+}
+section .product-section li {
+    background: #006400;
+    padding: 7px 12px;
+}
+section .product-section li:nth-child(even) {
+    background: #008000
+}
+article .order-now h2 {
+    font-size: 15px;
+    margin: 15px;
+    text-align: center;
+}
+form label {
+    font-size: 12px;
+}
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
@@ -28,4 +74,42 @@ input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    width: 55px;
+}
+form {
+    padding-left: 20px;
+}
+#submitOrder {
+    color: #006400;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+    border: none;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 12px 40px;
+}
+#myUl {
+    background: #fff;
+    
+}
+#myUl li:nth-child(even) {
+    background: #d1d2d6;
+    padding: 5px;
+}
+#myUl li span {
+    font-size: 13px;
+}
+#myUl li p {
+    font-weight: bold;
+    padding: 20px;
+}
+.no-order {
+    color: #F53D55;
+    text-align: center;
+    padding: 20px;
+    background: white;
 }

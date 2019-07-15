@@ -54,9 +54,12 @@ const submitOrder = () => {
     //clear btn
     const ulChild = myUl.childNodes;
     const clear = document.getElementById("clear");
-    if (ulChild.length > 0) {
+    const noOrder = document.getElementById("no-order");
+    if ((ulChild.length - 1) >= 0) {
          clear.style.display = "block";
+         
     };
+
     clear.addEventListener('click', () => {
         myUl.innerHTML = ""
         clear.style.display = "none";

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="all" href="style.css">
-    <title>Billing System</title>
+    <link rel="icon" type="image/gif/png" href="./img/billing app farm.png">
+    <title>Farm Market</title>
     <style>
     #clear {
         display: none;
@@ -16,13 +17,17 @@
     <div class="wrapper">
         <header>
          <div class="logo">
-             <h1>FOREVER FARM</h1>
+             <a href="index.html"><img src="img/billing app farm.png" alt="farm market"></a>
          </div>
         </header>
        <!--SECTION-->
        <section>
+           <div class="banner-img">
+               <img src="img/Group 2.png" alt="farm market">
+           </div>
+
            <div class="product-section">
-               <h2>Product Section</h2>
+               <h2>Available Today</h2>
                <ul class="value">
                    <li>
                        <span class="title">Corn</span><br>
@@ -58,8 +63,11 @@
                     </li>
                </ul>
            </div>
+        </section>
+        <!--ARTICLE-->
+        <article>
            <div class="order-now">
-               <h2>Order Section</h2>
+               <h2>Order</h2>
            </div>
            <form>
                <label for="corn">Corn:</label><br>
@@ -95,12 +103,14 @@
                <br>
                <br>
            </form>
-           <button onclick="submitOrder()">Submit Order</button>
+           <button id="submitOrder" onclick="submitOrder()">Submit Order</button>
            <div class="your-order">
-               <ol id="myUl"></ol>
+               <ul id="myUl">
+               </ul>
            </div>
+           <div class="no-order" id="no-order">No Order Yet</div>
            <button id="clear">Clear List</button>
-       </section>
+        </article>
     </div>
 
     <script type="text/javascript" src="main.js"></script>
