@@ -79,7 +79,7 @@ input[type=number] {
     width: 55px;
 }
 form {
-    padding-left: 20px;
+    padding-left: 70px;
 }
 #submitOrder {
     color: #006400;
@@ -90,7 +90,6 @@ form {
     background: white;
     border-radius: 30px;
     cursor: pointer;
-    margin: 12px 40px;
 }
 #myUl {
     background: #fff;
@@ -112,4 +111,73 @@ form {
     text-align: center;
     padding: 20px;
     background: white;
+}
+#clear {
+        color: #F53D55;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 8px 12px;
+        border: none;
+        background: white;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: 0;
+}
+.btn {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    padding: 50px;
+}
+form {
+    display: grid;
+    grid-template-columns: 50% 50%
+}
+@media only screen and (min-width: 700px) {
+    form {
+        display: flex;
+        
+    }
+    .btn {
+        display: block;
+        margin-left: 50px;
+        justify-content: inherit;
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        max-width: 1250px;
+        width: 98%;
+        margin: 0 auto;
+    }
+    article {
+        min-height: 300px;
+        background: #F53D55;
+    }
+    .btn {
+      margin: 50px 70px;
+    }
+    article .order-now h2 {
+        font-size: 20px;
+        padding: 30px;
+        color: white;
+    }
+    .no-order {
+     min-height: 100px;
+     padding: 70px;
+    }
+
+    section .product-section {
+        width: 700px;
+        margin: 20px auto;
+        border-radius: 50px;
+        border: 7px solid yellow;
+    }
+    section {
+        padding: 30px;
+    }
+    .cont {
+        margin-left: 15px;
+    }
 }

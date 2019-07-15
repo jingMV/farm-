@@ -7,11 +7,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="style.css">
     <link rel="icon" type="image/gif/png" href="./img/billing app farm.png">
     <title>Farm Market</title>
-    <style>
-    #clear {
-        display: none;
-    }
-    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -70,47 +65,69 @@
                <h2>Order</h2>
            </div>
            <form>
+               <div class="cont">
                <label for="corn">Corn:</label><br>
                <input type="number" id="corn" name="corn" value=0 onfocus="this.value=''">
                <br>
                <br>
+               </div>
+               <div class="cont">
                <label for="banana">Banana:</label><br>
                <input type="number" id="banana" name="banana" value=0 onfocus="this.value=''">
                <br>
                <br>
-               <label for="apple">Corn:</label><br>
+               </div>
+               <div class="cont">
+               <label for="apple">Apple:</label><br>
                <input type="number" id="apple" name="apple" value=0 onfocus="this.value=''">
                <br>
                <br>
+               </div>
+               <div class="cont">
                <label for="orange">Orange:</label><br>
                <input type="number" id="orange" name="orange" value=0 onfocus="this.value=''">
                <br>
                <br>
+               </div>
+               <div class="cont">
                <label for="mango">Mango:</label><br>
                <input type="number" id="mango" name="mango" value=0 onfocus="this.value=''">
                <br>
                <br>
+               </div>
+               <div class="cont">
                <label for="strawberry">Strawberry:</label><br>
                <input type="number" id="strawberry" name="strawberry" value=0 onfocus="this.value=''">
                <br>
                <br>
+            </div>
+            <div class="cont">
                <label for="waterMelon">Water Melon:</label><br>
                <input type="number" id="waterMelon" name="waterMelon" value=0 onfocus="this.value=''">
                <br>
                <br>
+            </div>
+            <div class="cont">
                <label for="tamarine">Tamarine:</label><br>
                <input type="number" id="tamarine" name="tamarine" value=0 onfocus="this.value=''">
                <br>
                <br>
+            </div>
            </form>
+           <div class="btn">
            <button id="submitOrder" onclick="submitOrder()">Submit Order</button>
+           <button id="clear">Clear List</button>
+           </div>
+        </article>
+
+
            <div class="your-order">
                <ul id="myUl">
                </ul>
            </div>
-           <div class="no-order" id="no-order">No Order Yet</div>
-           <button id="clear">Clear List</button>
-        </article>
+           
+           <div class="no-order" id="no-order">Order List</div>
+        
     </div>
 
     <script type="text/javascript" src="main.js"></script>

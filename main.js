@@ -22,6 +22,8 @@ const submitOrder = () => {
 
     //pass the compute data to ORDER-SECTION
    const myUl = document.getElementById("myUl");
+   
+
    if (corn >= 1 || banana >= 1 || apple >= 1 || orange >= 1 || mango >= 1 || strawberry >= 1 || waterMelon >= 1 || tamarine >= 1) {
     const list = document.createElement("LI");
     const span = document.createElement("SPAN");
@@ -32,7 +34,7 @@ const submitOrder = () => {
 
     //create a P element that display total amount of order
     const allProduct = cornVal + bananaVal + appleVal + orangeVal + mangoVal + strawberryVal + waterMelonVal + tamarineVal;
-    const totalText = "TOTAL ORDER: " + allProduct
+    const totalText = "TOTAL ORDER: " + allProduct;
     const myP = document.createElement("P");
     const myPText = document.createTextNode(totalText)
     myP.appendChild(myPText);
@@ -51,18 +53,20 @@ const submitOrder = () => {
     this.waterMelon.value = 0;
     this.tamarine.value = 0;
 
-    //clear btn
-    const ulChild = myUl.childNodes;
-    const clear = document.getElementById("clear");
-    const noOrder = document.getElementById("no-order");
-    if ((ulChild.length - 1) >= 0) {
-         clear.style.display = "block";
-         
-    };
-
-    clear.addEventListener('click', () => {
-        myUl.innerHTML = ""
-        clear.style.display = "none";
-    })
-     console.log(myUl.childNodes)
+     //clear no order yet
+     const childUl = myUl.childNodes;
+     const noOrder = document.getElementById("no-order");
+     if (childUl.length > 1) {
+         noOrder.style.display = "none";
+     };
+    console.log(childUl.length)
 }
+     //clear the list
+     const myUl = document.getElementById("myUl");
+     const clear = document.getElementById("clear");
+     const noOrder = document.getElementById("no-order");
+     clear.addEventListener('click', () => {
+         myUl.innerHTML = ""
+         noOrder.style.display = "block";
+         
+     });
