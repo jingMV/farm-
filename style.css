@@ -59,9 +59,9 @@ section .product-section li:nth-child(even) {
     background: #008000
 }
 article .order-now h2 {
-    font-size: 15px;
+    font-size: 20px;
     margin: 15px;
-    text-align: center;
+    color: #006400;
 }
 form label {
     font-size: 12px;
@@ -77,9 +77,6 @@ input::-webkit-inner-spin-button {
 }
 input[type=number] {
     width: 55px;
-}
-form {
-    padding-left: 70px;
 }
 #submitOrder {
     color: #006400;
@@ -122,16 +119,16 @@ form {
         border-radius: 30px;
         cursor: pointer;
         margin: 0;
+        margin-left: 10px;
 }
 .btn {
     display: flex;
-    margin: 10px;
-    justify-content: space-between;
-    padding: 50px;
+    margin: 15px;
 }
 form {
     display: grid;
-    grid-template-columns: 50% 50%
+    grid-template-columns: 40% 40%;
+    margin: 20px 0px 0px 15px;
 }
 @media only screen and (min-width: 700px) {
     form {
@@ -150,6 +147,9 @@ form {
         max-width: 1250px;
         width: 98%;
         margin: 0 auto;
+    }
+    header img {
+        width: 120px;
     }
     article {
         min-height: 300px;
